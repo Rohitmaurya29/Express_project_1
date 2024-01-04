@@ -1,0 +1,111 @@
+extends layout
+block content
+
+    div.all
+      div.freecode freeCodeCamp Survey Form
+      div.thank <i>Thank you for taking the time to help us improve the platform</i> 
+      div.form
+        div 
+          div.label 
+            label(for="name") Name
+          div.input 
+            input(type="text" id="name" required)
+          
+          div.label 
+            label(for="mail") Email 
+          div.input 
+            input(type="email" id="mail" required)
+          
+          div.label 
+            label(for="age") Age 
+          div.input 
+            input(type="number" id="age" required)
+
+          div.label 
+            label(for="role") What option describes your current role?
+          div.input 
+            select(id="role" required)
+              option(value="student") Student 
+              option(value="job") Full Time Job 
+              option(value="learner") Full Time Learner 
+              option(value="nosay") Prefer Not To Say
+
+          div.label.btmpdng Would you recommend freeCodeCamp to a friend?
+          div.radio 
+            input(type="radio" id="def" name="radio")
+            label(for="def") Definitely
+
+          div.radio 
+            input(type="radio" id="maybe" name="radio")
+            label(for="maybe") Maybe 
+          
+          div.radio 
+            input(type="radio" id="ntsure" name="radio")
+            label(for="ntsure") Not Sure
+
+          div.label 
+          label(for="feature") What is your favorite feature of freeCodeCamp?
+          div.input 
+            select(id="feature" required)
+              option(value="chlngs") Challenges 
+              option(value="Projects") Projects 
+              option(value="Community") Community 
+              option(value="opnsrc") Open Source
+
+          div.label.btmpdng What would you like to see improved? (Check all that apply)
+          div.radio 
+            input(type="checkbox" id="fep")
+            label(for="fep") Front-end Projects
+
+          div.radio 
+            input(type="checkbox" id="bep")
+            label(for="bep") Back-end Projects
+
+          div.radio 
+            input(type="checkbox" id="DV")
+            label(for="DV") Data Visualization
+
+          div.radio 
+            input(type="checkbox" id="chlngs")
+            label(for="chlngs") Challenges 
+
+          div.radio
+            input(type="checkbox" id="OPC")
+            label(for="OPC") Open Source Community 
+
+          div.radio 
+            input(type="checkbox" id="GHC")
+            label(for="GHC") Gitter Help Community 
+
+          div.radio 
+            input(type="checkbox" id="vdo")
+            label(for="vdo") Videos 
+
+          div.radio 
+            input(type="checkbox" id="CM")
+            label(for="CM") City Meetups 
+
+          div.radio 
+            input(type="checkbox" id="wiki")
+            label(for="wiki") Wiki 
+
+          div.radio 
+            input(type="checkbox" id="form")
+            label(for="form") Forum 
+
+          div.radio 
+            input(type="checkbox" id="AC")
+            label(for="AC") Additional Courses
+
+          div.label Any comments or suggestions?
+          div.cmnt 
+            textarea(placeholder="Enter Your Comment Here...")
+
+            div.submit 
+              button(type="submit") Submit
+
+            
+
+
+
+          
